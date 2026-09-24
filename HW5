@@ -1,0 +1,32 @@
+/******************************************************************************
+Dean Bingham
+CSPS 225
+9/25/2026
+Fraction Calculator that totally works 100%
+*******************************************************************************/
+#include <iostream>
+
+
+
+
+/* TO DO LIST
+Make fraction class
+Default constructor for fraction class
+Overload constructor
+Make 2 functions OUTSIDE fraction class
+Do not allow user to put 0 in denominator
+
+in Main:
+    Create 2 fraction objects
+    Multiply 2 fraction objects
+    Simplify fraction to mixed fraction
+    display all fraction
+
+*/
+
+int main()
+{
+    std::cout<<"Hello World";
+
+    return 0;
+}
