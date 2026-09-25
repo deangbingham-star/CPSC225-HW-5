@@ -1,0 +1,41 @@
+
+DocViewer
+Page
+of 2
+Pages
+CS225 Marriott Homework #5
+➢
+ Create a Fraction class with private fields for whole number, numerator, and
+denominator. Create getter functions for each field. (public functions that allow you to
+retrieve the values of the private data)
+➢
+ Create a default constructor for Fraction that takes 0 input arguments. Inside the
+function, prompt the user to enter 3 integers and use them to set the private whole
+number, numerator, and denominator fields.
+➢
+ Overload the constructor and create a version of the constructor where the numerator and
+denominator are required but the whole number has a default of 0.
+➢
+ Create 2 functions that are not part of the Fraction class, but make use of Fraction objects
+as the input arguments and/or return value.
+➢
+ Do not allow the user to put a 0 in the denominator of the Fraction.
+void display(const Fraction& f);
+Fraction multiply(const Fraction& fraction1, const Fraction& fraction2);
+➢
+ In main, create 2 Fraction objects (letting the user enter whole number, numerator, and
+denominator).
+➢
+ Use the multiply function to calculate a third Fraction that is the result of fraction1 times
+fraction2.
+➢
+ Display all 3 fraction objects in a reduced form.
+o if the whole-number portion is greater than or equal to 1, show it in the output.
+Otherwise do not print it.(ex. a fraction 1 1/2 should be displayed as is, but 0 1/3
+should be displayed as 1/3)
+o reduce the fractions (ex. 7/2 should be reduced to 3 1/2, 2 2/4 should be reduced
+to 2 1/2
+Here are a few test cases you can try. Feel free to write extra helper functions (ex. reduce).
+Negative numbers do not need to be handled by this assignment.
+Submit via ONLY homework5YourName.cpp via Canvas.
+Annotations
