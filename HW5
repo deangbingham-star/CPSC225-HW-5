@@ -12,6 +12,216 @@ using namespace std;
 
 
 /* TO DO LIST
+Make fraction class +
+Default constructor for fraction class
+Overload constructor
+Make 2 functions OUTSIDE fraction class
+Do not allow user to put 0 in denominator
+
+in Main:
+    Create 2 fraction objects then
+    Multiply 2 fraction objects
+    Simplify fraction to mixed fraction
+    display all fraction
+
+*/
+
+
+//**********************************************
+
+
+class fraction
+{
+    public:
+    
+    fraction()
+    {
+        cout<<"Debug.Created Fraction"<<endl;
+    }
+
+    int getNumerator() {return numerator;}
+    int getDenominator() {return denominator};
+    int getWholeNum() {return wholeNum};
+
+    private:
+    int numerator;
+    int denominator;
+    int wholeNum;
+
+    return fraction;
+};
+//***********************************************
+int mixify(int numerator, int denominator, int wholeNum)  //Mix improper fraction into mixed fraction
+{
+    int numerator = numerator;
+    int denominator = denominator;
+    int wholeNum = wholeNum;
+    while (numerator >= denominator)
+	{
+	    wholeNum ++;
+	    numerator = numerator - denominator;
+	}
+
+//	displayNum(numerator,denominator,wholeNum);
+    return 0;
+}
+//***********************************************
+
+
+
+int displayNum(int numerator, int denominator, int wholeNum)
+{
+	int numerator = numerator;
+	int  denominator = denominator;
+	int wholeNum = wholeNum;
+	cout<<"Full Number: "<<wholeNum<<" "<<numerator<<"/"<<denominator<<endl;
+	return 0;
+}
+
+
+
+int main()
+{
+	std::cout<<"Program Started";
+
+	//testing for mixed fraction math
+	int numerator = 11;
+	int denominator = 2;
+	int wholeNum = 0;
+
+	while (numerator >= denominator)
+	{
+		wholeNum ++;
+		numerator = numerator - denominator;
+	}
+
+	displayNum(numerator,denominator,wholeNum);
+
+    fraction fract1;
+    fract1.numerator = 11;
+    fract1.denominator = 2;
+    fract1.wholeNum = 0;
+    
+	return 0;
+}/******************************************************************************
+Dean Bingham
+CSPS 225
+9/25/2026
+Fraction Calculator that totally works 100%
+*******************************************************************************/
+#include <iostream>
+using namespace std;
+
+
+
+
+
+/* TO DO LIST
+Make fraction class +
+Default constructor for fraction class
+Overload constructor
+Make 2 functions OUTSIDE fraction class
+Do not allow user to put 0 in denominator
+
+in Main:
+    Create 2 fraction objects then
+    Multiply 2 fraction objects
+    Simplify fraction to mixed fraction
+    display all fraction
+
+*/
+
+
+//**********************************************
+
+
+class fraction
+{
+    public:
+    
+    fraction()
+    {
+        cout<<"Debug.Created Fraction"<<endl;
+    }
+
+    int getNumerator() {return numerator;}
+    int getDenominator() {return denominator};
+    int getWholeNum() {return wholeNum};
+
+    private:
+    int numerator;
+    int denominator;
+    int wholeNum;
+
+    return fraction;
+};
+//***********************************************
+int mixify(int numerator, int denominator, int wholeNum)  //Mix improper fraction into mixed fraction
+{
+    int numerator = numerator;
+    int denominator = denominator;
+    int wholeNum = wholeNum;
+    while (numerator >= denominator)
+	{
+	    wholeNum ++;
+	    numerator = numerator - denominator;
+	}
+
+//	displayNum(numerator,denominator,wholeNum);
+    return 0;
+}
+//***********************************************
+
+
+
+int displayNum(int numerator, int denominator, int wholeNum)
+{
+	int numerator = numerator;
+	int  denominator = denominator;
+	int wholeNum = wholeNum;
+	cout<<"Full Number: "<<wholeNum<<" "<<numerator<<"/"<<denominator<<endl;
+	return 0;
+}
+
+
+
+int main()
+{
+	std::cout<<"Program Started";
+
+	//testing for mixed fraction math
+	int numerator = 11;
+	int denominator = 2;
+	int wholeNum = 0;
+
+	while (numerator >= denominator)
+	{
+		wholeNum ++;
+		numerator = numerator - denominator;
+	}
+
+	displayNum(numerator,denominator,wholeNum);
+
+    fraction fract1;
+    fract1.numerator = 11;
+    fract1.denominator = 2;
+    fract1.wholeNum = 0;
+    
+	return 0;
+}/******************************************************************************
+Dean Bingham
+CSPS 225
+9/25/2026
+Fraction Calculator that totally works 100%
+*******************************************************************************/
+#include <iostream>
+using namespace std;
+
+
+
+
+
+/* TO DO LIST
 Make fraction class
 Default constructor for fraction class
 Overload constructor
