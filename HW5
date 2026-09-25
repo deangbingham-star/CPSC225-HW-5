@@ -5,6 +5,8 @@ CSPS 225
 Fraction Calculator that totally works 100%
 *******************************************************************************/
 #include <iostream>
+using namespace std;
+
 
 
 
@@ -24,9 +26,63 @@ in Main:
 
 */
 
-int main()
+
+//**********************************************
+
+/*
+class fraction
 {
-    std::cout<<"Hello World";
+    public:
+
+    int getNumerator() {return numerator;}
+    int getDenominator() {return denominator};
+    int getWholeNum() {return wholeNum};
+
+    private:
+    int numerator;
+    int denominator;
+    int wholeNum;
 
     return 0;
+};
+//***********************************************
+int mixify()  //Mix improper fraction into mixed fraction
+{
+    return 0;
+}
+//***********************************************
+
+*/
+
+int displayNum(int x, int y, int z)
+{
+	int numerator = x;
+	int  denominator = y;
+	int wholeNum = z;
+	cout<<"Full Number: "<<wholeNum<<" "<<numerator<<"/"<<denominator<<endl;
+	return 0;
+}
+
+
+
+int main()
+{
+	std::cout<<"Program Started";
+
+	//testing for mixed fraction math
+	int numerator = 11;
+	int denominator = 2;
+	int wholeNum = 0;
+
+	while (numerator >= denominator)
+	{
+	    wholeNum ++;
+	    numerator = numerator - denominator;
+	}
+
+	displayNum(numerator,denominator,wholeNum);
+
+
+
+	return 0;
 }
