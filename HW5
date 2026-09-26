@@ -85,17 +85,20 @@ int mixify(int numerator, int denominator, int wholeNum)  //Mix improper fractio
 
 void displayNum(fraction f) //display function as improper function
 {
-    int numerator = f.getNumerator();
-    int denominator = f.getDenominator();
-    int wholeNum = f.getWholeNum();
-    
+	int numerator = f.getNumerator();
+	int denominator = f.getDenominator();
+	int wholeNum = f.getWholeNum();
+
 	cout<<"Full Number: "<<wholeNum<<" "<<numerator<<"/"<<denominator<<endl;
 
 }
 //*************************************************
-void multiply(fraction) //take two fractions, multiply. Store results in third fraction
+fraction multiply(fraction f1, fraction f2) //take two fractions, multiply. Store results in third fraction
 {
-	
+    int sumNumerator = f1.numerator * f2.numerator;
+    int sumDenomerator = f1.denominator * f2.denominator;
+    int sumWholeNumbers = f1.wholeNum * f2.wholeNum;
+    return 0;
 }
 
 //*************************************************8
@@ -122,8 +125,11 @@ int main()
 	fraction fract2(1,3,0);
 
 	displayNum(fract1);
-	
-	fraction fract3; // no arguments
+	displayNum(fract2);
+
+	fract 3 =	multiply(fract1, fract2);
+
+	//fraction fract3; // no arguments
 
 	return 0;
 }
