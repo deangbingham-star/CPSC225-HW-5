@@ -132,7 +132,7 @@ int main()
 
 	fraction fract3 =	multiply(fract1, fract2);
 
-    
+    mixify(fract3);
     displayNum(fract3);
 	//fraction fract3; // no arguments
 
