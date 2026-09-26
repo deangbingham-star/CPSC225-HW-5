@@ -14,16 +14,16 @@ using namespace std;
 
 /* TO DO LIST
 Make fraction class +
-Default constructor for fraction class
-Overload constructor
-Make 2 functions OUTSIDE fraction class
+Default constructor for fraction class +
+Overload constructor +
+Make 2 functions OUTSIDE fraction class +
 Do not allow user to put 0 in denominator
 
 in Main:
-    Create 2 fraction objects then
-    Multiply 2 fraction objects
+    Create 2 fraction objects then +
+    Multiply 2 fraction objects +
     Simplify fraction to mixed fraction
-    display all fraction
+    display 3rd fraction
 
 */
 
@@ -67,8 +67,11 @@ private:
 
 };
 //***********************************************
-int mixify(int numerator, int denominator, int wholeNum)  //Mix improper fraction into mixed fraction
+fraction mixify(fraction g)  //Mix improper fraction into mixed fraction
 {
+    int numerator = g.getNumerator;
+    int denominator = g.getDenominator;
+    int wholeNum = g.getWholeNum;
 
 	while (numerator >= denominator)
 	{
@@ -77,7 +80,7 @@ int mixify(int numerator, int denominator, int wholeNum)  //Mix improper fractio
 	}
 
 	//	displayNum(numerator,denominator,wholeNum);
-	return 0;
+	return fraction(numerator,denominator,wholeNum);
 }
 //***********************************************
 
@@ -95,10 +98,10 @@ void displayNum(fraction f) //display function as improper function
 //*************************************************
 fraction multiply(fraction f1, fraction f2) //take two fractions, multiply. Store results in third fraction
 {
-    int sumNumerator = f1.numerator * f2.numerator;
-    int sumDenomerator = f1.denominator * f2.denominator;
-    int sumWholeNumbers = f1.wholeNum * f2.wholeNum;
-    return 0;
+    int sumNumerator = f1.getNumerator() * f2.getNumerator();
+    int sumDenomerator = f1.getDenominator() * f2.getDenominator();
+    int sumWholeNumbers = f1.getWholeNum() * f2.getWholeNum();
+    return fraction(sumNumerator,sumDenomerator,sumWholeNumbers);
 }
 
 //*************************************************8
@@ -127,8 +130,10 @@ int main()
 	displayNum(fract1);
 	displayNum(fract2);
 
-	fract 3 =	multiply(fract1, fract2);
+	fraction fract3 =	multiply(fract1, fract2);
 
+    
+    displayNum(fract3);
 	//fraction fract3; // no arguments
 
 	return 0;
