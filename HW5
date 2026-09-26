@@ -33,57 +33,75 @@ in Main:
 
 class fraction
 {
-    public:
-    
-    fraction()
-    {
-        cout<<"Debug.Created Fraction"<<endl;
-    }
+public:
 
-    int getNumerator() {return numerator};
-    int getDenominator() {return denominator};
-    int getWholeNum() {return wholeNum};
+	fraction()
+	{
+		cout<<"\nDebug.Created Fraction\n"<<endl;
+	}
 
-    private:
-    int numerator;
-    int denominator;
-    int wholeNum;
 
-  
+	fraction(int n, int d, int w)
+	{
+		numerator = n;
+		denominator = d;
+		wholeNum = w;
+	}
+
+
+	int getNumerator() {
+		return numerator;
+	}
+	int getDenominator() {
+		return denominator;
+	}
+	int getWholeNum() {
+		return wholeNum;
+	}
+
+private:
+	int numerator;
+	int denominator;
+	int wholeNum;
+
+
 };
 //***********************************************
 int mixify(int numerator, int denominator, int wholeNum)  //Mix improper fraction into mixed fraction
 {
 
-    while (numerator >= denominator)
+	while (numerator >= denominator)
 	{
-	    wholeNum ++;
-	    numerator = numerator - denominator;
+		wholeNum ++;
+		numerator = numerator - denominator;
 	}
 
-//	displayNum(numerator,denominator,wholeNum);
-    return 0;
+	//	displayNum(numerator,denominator,wholeNum);
+	return 0;
 }
 //***********************************************
 
 
 
-int displayNum(int numerator, int denominator, int wholeNum) //display function as improper function
+fraction displayNum(fraction) //display function as improper function
 {
-
+    numerator = fraction.numerator;
+    denominator = fraction.denominator;
+    wholeNum = fraction.wholeNum;
+    
 	cout<<"Full Number: "<<wholeNum<<" "<<numerator<<"/"<<denominator<<endl;
 	return 0;
 }
 //*************************************************
-fraction multiply() //take two fractions, multiply. Store results in third fraction
+int multiply() //take two fractions, multiply. Store results in third fraction
 {
-    
+	return 0;
 }
 
 //*************************************************8
 int main()
 {
-	std::cout<<"Program Started";
+	std::cout<<"Program Started\n";
 
 	/*/testing for mixed fraction math
 	int numerator = 11;
@@ -95,20 +113,17 @@ int main()
 		wholeNum ++;
 		numerator = numerator - denominator;
 	}
-    
+
 	displayNum(numerator,denominator,wholeNum);
-*/
-    fraction fract1;
-    fract1.numerator = 11;
-    fract1.denominator = 2;
-    fract1.wholeNum = 0;
-    
-    fraction fract2;
-    fract2.numerator = 1;
-    fract2.denominator = 3;
-    fract2.wholeNum = 0;
-    
-    fraction fract3;
-    
+	*/
+	fraction fract1(11,2,0);
+
+
+	fraction fract2(1,3,0);
+
+	displayNum(fract1);
+	
+	fraction fract3; // no arguments
+
 	return 0;
 }
