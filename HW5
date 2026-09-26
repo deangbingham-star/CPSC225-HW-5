@@ -69,9 +69,9 @@ private:
 //***********************************************
 fraction mixify(fraction g)  //Mix improper fraction into mixed fraction
 {
-    int numerator = g.getNumerator;
-    int denominator = g.getDenominator;
-    int wholeNum = g.getWholeNum;
+    int numerator = g.getNumerator();
+    int denominator = g.getDenominator();
+    int wholeNum = g.getWholeNum();
 
 	while (numerator >= denominator)
 	{
